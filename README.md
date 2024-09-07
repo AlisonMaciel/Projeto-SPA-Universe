@@ -12,4 +12,4 @@
 </p>
 
 <p>Deixarei o link do Netlify para a visualização do projeto funcionando, além claro para que possam mexer no site. Até mais devs 🚀💜</p>
-<a href="https://ephemeral-speculoos-26b52b.netlify.app/"></a>
+https://ephemeral-speculoos-26b52b.netlify.app/
