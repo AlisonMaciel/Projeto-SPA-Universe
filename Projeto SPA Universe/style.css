@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes teste {
+  from {
+    background: linear-gradient(to top, #E1E1E6 0%, transparent 100%);
+  }
+
+  to {
+    background: linear-gradient(to top, #E1E1E6 100%, transparent 0%);
+  }
+}
+
+@keyframes main {
+  from {
+    opacity: 0;
+    transform: translateY(10px);     
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  font-size: 62.5%;
+  --color-h1: #E1E1E6;
+  --color-p: #e1e1e6d5;
+  --color-ul: #c4c4ccb9;
+  --color-White: #FFFFFF;
+  --color-buttonHover: #02799D;
+}
+
+#universe {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("./assets/mountains-universe-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Roboto", "sans-serif";
+}
+
+header {
+  display: flex;
+  gap: 3.2rem;
+  max-width: 100%;
+  height: 12.2rem;
+  padding: 4.0rem 0rem 4.0rem 0rem;
+  animation: move 0.8s;
+}
+
+header figure > img {
+  margin-left: 7.2rem;
+  margin-right: 3.2rem;
+  animation: girar 9s infinite;
+}
+
+header ul li > a {
+  color: var(--color-White);
+  text-decoration: none;
+}
+
+header  ul  {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  color: var(--color-ul);
+  cursor: pointer;
+  list-style: none;
+}
+
+header ul > li:hover {
+  color: var(--color-White);
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  height: 100vh;
+  padding-bottom: 25.6rem;
+  animation: main 2s;
+}
+
+main h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--color-h1);
+}
+
+main button {
+  padding: 1.2rem 3.2rem;
+  color: var(--color-White);
+  width: 20.9rem;
+  height: 4.8rem;
+  background-color: transparent;
+  border: 0.2rem solid var(--color-White);
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-top: 2.4rem;
+  cursor: pointer;
+}
+
+main button:hover {
+  animation: teste 259ms forwards;
+  color: var(--color-buttonHover);
+  background-color: var(--color-White);
+}
+
+#screen {
+  margin: 6.2rem 0rem 0rem 10.2rem;
+}
+
+#screen h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--color-h1);
+  margin-bottom: 1.6rem;
+}
+
+#screen p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--color-p);
+  max-width: 64.8rem;
+}
+
